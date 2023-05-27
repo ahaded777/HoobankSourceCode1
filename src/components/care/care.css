@@ -1,0 +1,69 @@
+.bill{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 5rem;
+}
+
+.bill__text-h1{
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.bill__text-p{
+    color: #7D7E89;
+    margin-bottom: 20px;
+}
+
+.bill__text-image{
+    column-gap: 3rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .bill{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bill__text-h1{
+        font-size: 2rem;
+    }
+    
+    .bill__text-p{
+        color: #7D7E89;
+        margin-bottom: 20px;
+    }
+
+    .bill__image-img{
+        width: 500px;
+    }
+  
+}
+    
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .bill{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bill__text-p{
+        color: #7D7E89;
+        margin-bottom: 20px;
+    }
+}
+    
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .bill__text-h1{
+        font-size: 1.5rem;
+    }
+    
+    .bill__text-p{
+        font-size: 0.78rem;
+    }
+
+}
+    

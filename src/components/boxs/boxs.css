@@ -1,0 +1,36 @@
+.boxs__box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    column-gap: 5rem;
+}
+
+.boxs__img{
+    width: 150px;
+    height: auto;
+}
+
+    
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .boxs__box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        row-gap: 2rem;
+    }
+}
+    
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .boxs__box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+
+    .boxs__img{
+        width: auto;
+        height: auto;
+    }
+}
